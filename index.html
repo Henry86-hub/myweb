@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Programming Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-wrapper">
+
+    <!-- START SCREEN -->
+    <div id="start-screen">
+        <h2>PROGRAMMING QUIZ</h2>
+
+        <input type="text" id="username" placeholder="Masukkan nama kamu">
+
+        <p class="motivation">
+            💡 Tetap fokus, baca soal dengan teliti, dan percaya diri!
+        </p>
+
+        <button onclick="startGame()">START</button>
+    </div>
+
+    <!-- QUIZ SCREEN -->
+    <div id="quiz-screen" style="display:none">
+
+        <header class="game-header">
+            <span id="user-display"></span>
+            <span>Score: <b id="score">0</b></span>
+        </header>
+
+        <div class="question-box">
+            <p id="question"></p>
+        </div>
+
+        <div class="timer">
+            TIME: <span id="time">5</span>s
+        </div>
+
+        <div class="options">
+            <button onclick="checkAnswer(0)"></button>
+            <button onclick="checkAnswer(1)"></button>
+            <button onclick="checkAnswer(2)"></button>
+            <button onclick="checkAnswer(3)"></button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
